@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:id="@+id/ovel_linear_layout"
+        android:background="@drawable/cirluar_border"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B+"
+
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/searched_bloodgroup"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/searched_dob"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Years Old"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ovel_linear_layout"
+        android:layout_toEndOf="@+id/ovel_linear_layout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searched_name"
+            android:text="Name: "
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorRed"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searched_mobile"
+                    android:text="Mobile Number: "
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorRed" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/phone_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searched_mobile_number"
+            android:text="Mobile Number: "
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:textColor="@color/colorRed"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searched_city"
+            android:text="City"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorRed"
+            android:layout_below="@+id/tv_mobileNumber"
+           />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searched_gender"
+            android:text="Gender: "
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorRed"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

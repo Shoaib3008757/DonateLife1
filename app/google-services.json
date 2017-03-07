@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "900531481624",
+    "firebase_url": "https://donate-life-a2a9b.firebaseio.com",
+    "project_id": "donate-life-a2a9b",
+    "storage_bucket": "donate-life-a2a9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900531481624:android:5d020165f5c64ec6",
+        "android_client_info": {
+          "package_name": "ranglerz.com.donatelife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900531481624-15j9krn8ciomkn2egmimrthvhcrnrav9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSMms6xMPH7r-BBvwFe52ALxD7oG1PtrY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

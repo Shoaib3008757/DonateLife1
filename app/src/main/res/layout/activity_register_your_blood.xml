@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_your_blood"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_registration"
+    tools:context="ranglerz.com.donatelife.RegisterYourBlood">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:id="@+id/register_linear_layout"
+       android:layout_marginTop="0dp">
+
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/image_registration_title"
+           android:layout_weight="1"/>
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="90dp"
+           android:src="@drawable/blood_drop"
+           android:layout_weight="1"
+           />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl_name"
+        android:layout_weight="1"
+        android:background="@drawable/border_color"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/image_name"
+            android:id="@+id/name_image_view"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:id="@+id/r_name"
+            android:background="@null"
+            android:layout_marginRight="14dp"
+            android:textColorHint="@color/colorRed"
+            android:textColor="@color/colorRed"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/name_image_view"
+            android:layout_toEndOf="@+id/name_image_view" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_color"
+        android:id="@+id/rl_phone"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/image_phone"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:background="@null"
+            android:maxLength="13"
+            android:id="@+id/r_phone"
+            android:textColorHint="@color/colorRed"
+            android:textColor="@color/colorRed"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rl_dob"
+        android:layout_weight="1"
+        android:background="@drawable/border_color"
+        android:layout_marginTop="16dp"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/dob_image"
+            android:id="@+id/dob_image_view"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date Of Birth"
+            android:inputType="date"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:background="@null"
+            android:id="@+id/r_birth_date"
+            android:textColorHint="@color/colorRed"
+            android:textColor="@color/colorRed"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/dob_image_view"
+            android:layout_toEndOf="@+id/dob_image_view" />
+    </RelativeLayout>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:id="@+id/rl_gender"
+           android:layout_weight="1"
+           android:background="@drawable/border_color"
+           android:layout_marginTop="16dp"
+           >
+
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               app:srcCompat="@drawable/image_blood_drop"
+               android:id="@+id/gender_image_view"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="0dp" />
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/rr_spinner_blood_group"
+               android:entries="@array/BloodGroup"
+               android:layout_alignParentTop="true"
+               android:theme="@style/spinnerTheme"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="2dp"
+               android:layout_toRightOf="@+id/gender_image_view"
+               android:layout_toEndOf="@+id/gender_image_view"
+
+               />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:id="@+id/rl_city"
+           android:layout_weight="1"
+           android:background="@drawable/border_color"
+           android:layout_marginTop="16dp"
+           >
+
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               app:srcCompat="@drawable/image_city"
+               android:id="@+id/city_image_view"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="0dp" />
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/r_spinner_cities"
+               android:entries="@array/CitiesList"
+               android:layout_alignParentTop="true"
+               android:theme="@style/spinnerTheme"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="2dp"
+               android:layout_toRightOf="@+id/city_image_view"
+               android:layout_toEndOf="@+id/city_image_view"
+
+               />
+
+       </RelativeLayout>
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/radioGroupMaleFemale"
+           android:layout_below="@+id/rl_city"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           >
+
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Male"
+
+               android:textColor="@color/colorRed"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:layout_marginLeft="35dp"
+               android:backgroundTint="@color/colorRed"
+               app:buttonTint="@color/colorRed"
+               android:id="@+id/radio_male"
+               android:layout_weight="1"
+               />
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Female"
+
+               android:textColor="@color/colorRed"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:backgroundTint="@color/colorRed"
+               app:buttonTint="@color/colorRed"
+               android:id="@+id/radio_female"
+               android:layout_marginLeft="20dp"
+               android:layout_weight="1"
+               android:layout_below="@+id/r_spinner_gender"
+               />
+
+       </RadioGroup>
+
+
+
+
+   </LinearLayout>
+
+</ScrollView>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/corner"
+            android:id="@+id/r_button_submit"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:fontFamily="sans-serif-condensed"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1" />
+        </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" >
+    </ProgressBar>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_above="@+id/r_button_submit">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tips_for_donors_actvity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ranglerz.com.donatelife.TipsForDonorsActvity"
+    android:background="@drawable/backgroud_registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/register_linear_layout"
+        android:layout_marginTop="0dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/blood_drop"
+        android:layout_weight="1"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tips For Donors"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Drink plenty of water or juices the morning and night before you donate. To keep your blood sugar up eat Breakfast. Eat healthy food like iron rich foods for 2 weeks before your appointment: for example, spinach, whole grains, eggs, and beef. Don't eat fatty foods for twenty-four hours before you donate
+Don't smoke on the day before donating. You can smoke 3 hours after donation.
+Ask for a blanket if your hands or feet start to feel cold.
+After the donation have a snack.
+Rest for a few minutes enjoying your snack before leaving the donation site.
+After your donation try to Eat a meal high in protein: Fish, beef, chicken or legumes are excellent choices.
+Don't Drink Alcohol as you will not be eligible to donate blood if you have consumed alcohol 48 hours before donation.
+Try to avoid heavy lifting and strenuous exercise for the rest of the day."/>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

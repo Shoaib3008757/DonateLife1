@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Donate Life</string>
+
+
+    <array name="Gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <!-- List for Blood Groups-->
+    <array name="BloodGroup">
+        <item>Select Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </array>
+
+
+    <!-- List for Cities -->
+    <array name="CitiesList">
+        <item>Select City</item>
+        <item>Abbottabad</item>
+        <item>Attaok</item>
+        <item>Bahawalpur</item>
+        <item>Bhakkar</item>
+        <item>Bannu</item>
+        <item>Burewala</item>
+        <item>Chakwal</item>
+        <item>Chiniot</item>
+        <item>Dadu, Pakistan</item>
+        <item>Dera Ismail Khan</item>
+        <item>Dera Ghazi Khan</item>
+        <item>Faislabad</item>
+        <item>Gujrat City</item>
+        <item>Gujrawnwala</item>
+        <item>Gwadar</item>
+        <item>Hafizabad</item>
+        <item>Haripir, Pakistan</item>
+        <item>Hungo</item>
+        <item>Hyderabad</item>
+        <item>Islamabad</item>
+        <item>Jacobabad</item>
+        <item>Jhang</item>
+        <item>Jhelum</item>
+        <item>Karachi</item>
+        <item>Kasur</item>
+        <item>Khairpur</item>
+        <item>Khanewal</item>
+        <item>Khuzdar</item>
+        <item>Kohat</item>
+        <item>Lahore</item>
+        <item>Larkana</item>
+        <item>Mansehra</item>
+        <item>Mardan</item>
+        <item>Mianwali</item>
+        <item>Mian Chanu</item>
+        <item>Mingora</item>
+        <item>Mirpur Khas</item>
+        <item>Multan</item>
+        <item>Muzaffargarh</item>
+        <item>Nawabshah</item>
+        <item>Nowshera Khyber Pakhton Khan</item>
+        <item>Okara</item>
+        <item>Quetta</item>
+        <item>Rahim Yar Khan</item>
+        <item>Sadiqabad</item>
+        <item>Sahiwal</item>
+        <item>Sargodha</item>
+        <item>Sheikupura</item>
+        <item>Sialkot</item>
+        <item>Sukkur</item>
+        <item>Swabi</item>
+        <item>Thatta</item>
+        <item>Toba Tek Singh</item>
+        <item>Turbat</item>
+        <item>Peshawar</item>
+        <item>Pindi</item>
+        <item>Vehari</item>
+        <item>Wah Cantt</item>
+
+
+    </array>
+
+    <string name="banner_ad_unit_id">ca-app-pub-2735690748218549/3006880912</string>
+
+    <string name="facebook_app_id">711894538974799</string>
+
+</resources>

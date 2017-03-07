@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="@drawable/search_donar_backgroud">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_having"
+            android:text="Having "
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_blood"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:text="Blood Group"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/colorRed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_d_age"
+            android:text="AGE "
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"
+            android:layout_below="@+id/d_having"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_age"
+            android:layout_below="@+id/d_having"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:text="AGE"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/colorRed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_d_from"
+            android:text="From "
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_d_age"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_from"
+            android:layout_below="@+id/tv_d_age"
+            android:layout_alignParentRight="true"
+            android:text="From"
+            android:layout_marginRight="50dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/colorRed"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_button_call_later"
+                android:layout_weight="1"
+                android:text="Later"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/corner"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_button_call_now"
+                android:layout_weight="1"
+                android:text="Call Now"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/corner"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RadioGroup>

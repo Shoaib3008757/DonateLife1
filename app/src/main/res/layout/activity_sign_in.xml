@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_tips_for_donors_actvity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ranglerz.com.donatelife.SignIn"
+        android:background="@drawable/backgroud_registration">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/m_ed_enter_mobil"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:textColorHint="@color/colorRed"
+        android:textColor="@color/colorRed"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/m_ed_password"
+        android:hint="Enter New Password"
+        android:textColorHint="@color/colorRed"
+        android:textColor="@color/colorRed"
+        android:layout_above="@+id/m_ed_password_again"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/m_ed_password_again"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="Enter Password Again"
+        android:textColorHint="@color/colorRed"
+        android:textColor="@color/colorRed"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/m_bt_sumbmit"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:background="@color/colorRed"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/m_bt_createPassword"
+        android:visibility="gone"
+        android:text="Save Password"
+        android:textStyle="bold"
+        android:background="@color/colorRed"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" >
+    </ProgressBar>
+
+</RelativeLayout>
